@@ -27,6 +27,7 @@ Template Name: Home
 			<?php endwhile; ?>
 		</div>
 	</div>
+	<a id="what-we-do" class="anchor"></a>
 	<div class="container-fluid cont-2">
 		<div class="container">
 			<div class="row row-1">
@@ -52,30 +53,34 @@ Template Name: Home
 					<h2 class="h2-title"><?php the_field('1c.h2_title'); ?></h2>
 				</div>
 			</div>
-			<div class="row row-2">
-				<?php $i== 1 ;?>
-				<?php while (has_sub_field('1c.persons')): ?>
-				<div class="col-md-3 col-<?php echo $i; ?> cont-3_person">
-					<a href="<?php the_sub_field('1c.link_to'); ?>" style="background: url(<?php the_sub_field('1c.foto'); ?>);">	
-						<div class="normal-div">
-							<h3><?php the_sub_field('1c.name'); ?></h3>
-							<p><?php the_sub_field('1c.role'); ?></p>
-						</div>
-						<div class="hover-div">
-						  <img src="<?php the_sub_field('1c.icon'); ?>" alt="">
-						</div>
-					</a>
+			<div class="col-md-12 custom-col">
+				<div class="row row-2">
+					<?php $i = 1 ;?>
+					<?php while (has_sub_field('1c.persons')): ?>
+					<div class="col-md-3 col-<?php echo $i; ?> cont-3_person">
+						<a href="<?php the_sub_field('1c.link_to'); ?>" style="background: url(<?php the_sub_field('1c.foto'); ?>);">	
+							<div class="normal-div">
+								<h3><?php the_sub_field('1c.name'); ?></h3>
+								<p><?php the_sub_field('1c.role'); ?></p>
+							</div>
+							<div class="hover-div">
+							  <img src="<?php the_sub_field('1c.icon'); ?>" alt="">
+							</div>
+						</a>
+					</div>
+					<?php if($i == 4) echo '</div><div class="row row-3">'; ?>
+					<?php $i++; ?>
+					<?php endwhile; ?>
 				</div>
-				<?php $i++; ?>
-				<?php endwhile; ?>
 			</div>
-			<div class="row row-3">
+			<div class="row row-4">
 				<div class="col-md-12">
 					<a href="<?php the_field('1c.link'); ?>" class="btn btn-1">Read more about us</a>
 				</div>
 			</div>
 		</div>
 	</div>
+	<a id="portfolio" class="anchor"></a>
 	<div class="container-fluid cont-4">
 		<div class="container">
 			<div class="row row-1">
@@ -103,6 +108,7 @@ Template Name: Home
 			</div>
 		</div>
 	</div>
+	<a id="testimonials" class="anchor"></a>
 	<div class="container-fluid cont-5">
 		<div class="container">
 			<div class="row row-1">
@@ -128,6 +134,7 @@ Template Name: Home
 			</div>
 		</div>
 	</div>
+	<a id="contact" class="anchor"></a>
 	<div class="container-fluid cont-6">
 		<div class="container">
 			<div class="row row-1">

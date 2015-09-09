@@ -1,6 +1,40 @@
+.pixelperfect-image {
+    top: 23px;
+}
+
+
 body {
     font-family: open sans,sans-serif,arial;
     font-size: 16px;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+    line-height: 1.2em;
+    margin: 0 0 20px;
+    color: #313030;
+}
+p {
+    line-height: 1.62em;
+    margin: 0 0 20px;
+}
+.btn {
+    border: 2px solid;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 25px;
+    text-transform: uppercase;
+}
+.btn-1 {
+    border-color: #1791f4;
+    color: #1791f4;
+}
+.btn-1:hover {
+    text-decoration: underline;
+}
+.h2-title {
+    font-size: 28px;
+    margin: 0 0 80px;
+    text-align: center;
 }
 .container-fluid {
     padding: 0;
@@ -10,12 +44,6 @@ body {
     z-index: 10;
     right: 0px;
     left: 0px;
-}
-.main-slider {
-    height: 100vh;
-}
-.main-slider .slide {
-    height: 100vh;
 }
 .float-left {
     float: left;
@@ -35,14 +63,14 @@ body {
 #menu-menu li {
     display: inline;
     float: left;
-    padding: 25px;
+    padding: 25px 12px;
 }
 .nav-main {
     float: left;
 }
 .banner-header .fb-btn {
     float: right;
-    margin: 32px 0;
+    margin: 32px 0 32px 26px;
 }
 .banner-header .fb-btn a {
     color: #fff;
@@ -51,10 +79,210 @@ body {
     text-transform: uppercase;
     border: 2px solid #fff;
     border-radius: 10px;
-    padding: 9px 20px;
+    padding: 8px 20px;
 }
 .banner-header .fb-btn i {
-    font-size: 14px;
+    font-size: 16px;
     display: inline-block;
     margin: 0 8px 0 0;
 }
+.main-slider {
+    height: 100vh;
+}
+.main-slider .slide {
+    background-position: center top !important;
+    background-size: cover !important;
+    height: 100vh;
+    min-height: 700px;
+}
+.main-slider .container {
+    height: 100%;
+    position: relative;
+}
+.main-slider .col-md-12 {
+    height: 330px;
+    margin-top: -165px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+.main-slider h1 {
+    color: #fff;
+    font-family: playfair display,serif,times new roman;
+    font-size: 80px;
+    font-weight: normal;
+    margin: 0 0 30px;
+}
+.main-slider h1 strong {
+    font-weight: 700;
+    font-style: italic;
+    font-weight: 700;
+}
+.main-slider .text {
+    margin: auto;
+    max-width: 800px;
+    text-shadow: 0 0 25px #000;
+}
+.main-slider p {
+    color: #fff;
+    font-weight: 100;
+    margin: 0 auto 40px;
+    max-width: 550px;
+}
+.main-slider .btn {
+    color: #fff;
+}
+.main-slider .slick-dots {
+    bottom: 70px;
+    display: table !important;
+    left: 0;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    width: auto;
+}
+.main-slider .slick-dots li {
+    border: 1px solid #fff;
+    border-radius: 20px;
+    display: inline-block;
+    float: left;
+    list-style: outside none none;
+    margin: 0 3px;
+}
+.main-slider .slick-dots button {
+    background: none;
+    border: medium none;
+    border-radius: 10px;
+    display: inline-block;
+    float: left;
+    font-size: 0;
+    height: 8px;
+    margin: 5px;
+    padding: 0;
+    width: 8px;
+}
+.main-slider .slick-dots .slick-active button {
+    background-color: #fff;
+    margin: 4px;
+}
+.main-slider .slick-dots .slick-active {
+    border: 2px solid #fff;
+}
+.main-home .cont-2, .main-home .cont-3, .main-home .cont-2, .main-home .cont-4, .main-home .cont-2, .main-home .cont-5, .main-home .cont-2, .main-home .cont-6, .main-home .cont-2, .main-home .cont-7 {
+    padding: 75px 0;
+}
+.h2-title {
+    font-size: 28px;
+    margin: 0 0 75px;
+    text-align: center;
+}
+.main-home .cont-2_we-do > img {
+    display: block;
+    margin: 0 auto 38px;
+}
+.main-home .cont-2_we-do > h3 {
+    font-size: 21px;
+    margin: 0 0 38px;
+    text-align: center;
+}
+.main-home .cont-2_we-do > p {
+    text-align: center;
+    margin: 0;
+}
+.main-home .cont-3 {
+    background-color: #f3f3f3;
+}
+.main-home .cont-3_person {
+    padding: 0;
+}
+.main-home .cont-3_person > a {
+    background-position: center center !important;
+    background-size: cover !important;
+    box-shadow: 0 -80px 60px -80px rgba(0, 0, 0, 0.3) inset;
+    display: block;
+    min-height: 285px;
+    position: relative;
+}
+.col-2.cont-3_person, .col-4.cont-3_person, .col-6.cont-3_person, .col-8.cont-3_person {
+    margin-top: -38px;
+}
+.main-home .cont-3 .row-2 {
+    margin-top: 40px;
+}
+.main-home .cont-3_person .normal-div {
+    bottom: 0;
+    padding: 0 20px;
+    position: absolute;
+}
+.main-home .cont-3_person .hover-div {
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+    background: linear-gradient(to bottom, #44bff6 0%,#0d87f3 100%);
+}
+.main-home .cont-3_person:hover .hover-div {
+    opacity: 1;
+}
+.main-home .cont-3_person .normal-div > h3 {
+    color: #fff;
+    font-size: 21px;
+    margin: 0 0 4px;
+}
+.main-home .cont-3_person .normal-div > p {
+    color: #fff;
+    font-size: 15px;
+    margin: 0 0 15px;
+}
+.main-home .cont-3 .row-4 .btn-1 {
+    display: table;
+    margin: 85px auto 0;
+}
+.main-home .cont-4 {
+    background: url(http://localhost/dev6/wp-content/uploads/2015/09/14bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.main-home .cont-4_img > img {
+    width: 100%;
+}
+.slick-prev, .slick-next {
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    height: 40px;
+    margin-top: -20px;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+}
+.slick-prev {
+    left: 0;
+}
+.slick-next {
+    right: 0;
+}
+.slick-arrow .fa {
+    color: #fff;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

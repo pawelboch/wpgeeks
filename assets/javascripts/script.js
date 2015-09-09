@@ -26,3 +26,4 @@ pixelperfect.init( {
     image: "http://localhost/dev6/wp-content/uploads/2015/09/screen.jpg",
     opacity: .5
 } );
+
