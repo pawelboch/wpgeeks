@@ -1,0 +1,60 @@
+body {
+    font-family: open sans,sans-serif,arial;
+    font-size: 16px;
+}
+.container-fluid {
+    padding: 0;
+}
+.banner-header {
+    position: absolute;
+    z-index: 10;
+    right: 0px;
+    left: 0px;
+}
+.main-slider {
+    height: 100vh;
+}
+.main-slider .slide {
+    height: 100vh;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.banner-header .logo {
+    padding: 40px 0;
+}
+#menu-menu li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 15px;
+}
+#menu-menu li {
+    display: inline;
+    float: left;
+    padding: 25px;
+}
+.nav-main {
+    float: left;
+}
+.banner-header .fb-btn {
+    float: right;
+    margin: 32px 0;
+}
+.banner-header .fb-btn a {
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 9px 20px;
+}
+.banner-header .fb-btn i {
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 8px 0 0;
+}
