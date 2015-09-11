@@ -38,7 +38,7 @@ Template Name: Home
 			<div class="row row-2">
 				<?php while (has_sub_field('1b.blocks')): ?>
 				<div class="col-md-4 cont-2_we-do">
-					<img src="<?php the_sub_field('1b.img'); ?>" alt="">
+					<i class="fa <?php the_sub_field('1b.icon'); ?>"></i>
 					<h3><?php the_sub_field('1b.h3'); ?></h3>
 					<p><?php the_sub_field('1b.paragraph'); ?></p>
 				</div>
@@ -64,7 +64,7 @@ Template Name: Home
 								<p><?php the_sub_field('1c.role'); ?></p>
 							</div>
 							<div class="hover-div">
-							  <img src="<?php the_sub_field('1c.icon'); ?>" alt="">
+							  <i class="fa <?php the_sub_field('1c.icon'); ?>"></i>
 							</div>
 						</a>
 					</div>
@@ -122,7 +122,7 @@ Template Name: Home
 						<?php while (has_sub_field('1e.testimonials')): ?>
 						<div class="slide">
 							<div class="cont-5_testimonial">
-								<p><?php the_sub_field('1e.content'); ?></p>
+								<p><i><?php the_sub_field('1e.content'); ?></i></p>
 							</div>
 							<div class="cont-5_author">
 								<p><strong><?php the_sub_field('1e.author'); ?></strong></p>
@@ -136,17 +136,21 @@ Template Name: Home
 	</div>
 	<a id="contact" class="anchor"></a>
 	<div class="container-fluid cont-6">
+		<div class="col-md-6"></div>
+		<div class="col-md-6 cont-6_map">
+			<div id="map"></div>
+		</div>
 		<div class="container">
 			<div class="row row-1">
 				<div class="col-md-7 cont-6_contact">
 					<div class="row row-in-1">
 						<div class="col-md-12">
-							<h2><?php the_field('1f.h2_title'); ?></h2>
+							<h2 class="h2-title"><?php the_field('1f.h2_title'); ?></h2>
 						</div>
 					</div>
 					<div class="row row-in-2">
 						<div class="col-md-6 col-custom cont-6_contact_left">
-							<?php echo do_shortcode( '[contact-form-7 id="4" title="Contact"]' ) ?>
+							<?php echo do_shortcode( '[contact-form-7 id="59" title="Contact form"]' ) ?>
 						</div>
 						<div class="col-md-6 col-custom cont-6_contact_right">
 							<div class="top">
@@ -160,9 +164,7 @@ Template Name: Home
 						</div>
 					</div>
 				</div>
-				<div class="col-md-5 cont-6_map">
-					<div id="map"></div>
-				</div>
+				<div class="col-md-5"></div>
 			</div>
 		</div>
 	</div>
