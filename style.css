@@ -24,6 +24,9 @@ p {
     line-height: 1.62em;
     margin: 0 0 20px;
 }
+:focus {
+    outline: medium none !important;
+}
 .btn {
     border: 2px solid;
     border-radius: 8px;
@@ -71,6 +74,9 @@ p {
 .banner-header .logo {
     padding: 40px 0;
 }
+#menu-menu {
+    float: left;
+}
 #menu-menu li a {
     color: #fff;
     font-size: 14px;
@@ -106,8 +112,34 @@ p {
     display: inline-block;
     margin: 0 8px 0 0;
 }
+.h2-title {
+    font-size: 28px;
+    margin: 0 0 75px;
+    text-align: center;
+}
+.h3-title {
+    font-size: 21px;
+    margin: 0 0 25px;
+}
+::-webkit-input-placeholder {
+   opacity: 1;
+}
+:-moz-placeholder {
+   opacity: 1;
+}
+::-moz-placeholder {
+   opacity: 1;
+}
+:-ms-input-placeholder {  
+   opacity: 1;
+}
+.main-home .cont-1 {
+    background-color: #021422;
+    min-height: 700px;
+}
 .main-slider {
     height: 100vh;
+    min-height: 700px;
 }
 .main-slider .slide {
     background-position: center top !important;
@@ -196,15 +228,6 @@ p {
 .main-home .cont-6 .container {
     padding: 75px 15px;
 }
-.h2-title {
-    font-size: 28px;
-    margin: 0 0 75px;
-    text-align: center;
-}
-.h3-title {
-    font-size: 21px;
-    margin: 0 0 25px;
-}
 .main-home .cont-2_we-do > .fa {
     border-radius: 80px;
     color: #1791f4;
@@ -218,7 +241,6 @@ p {
     background: none;
     transition: background 0.2s, color 0.2s;
 }
-
 .main-home .cont-2_we-do > .fa::after {
     border: 3px solid #1791F4;
     border-radius: 80px;
@@ -242,7 +264,6 @@ p {
     opacity: 1;
     transform: scale(1.2);
 }
-
 .main-home .cont-2_we-do > h3 {
     font-size: 21px;
     margin: 0 0 38px;
@@ -296,8 +317,7 @@ p {
     display: table;
     font-size: 80px;
     left: 0;
-    margin: -40px auto auto;
-    position: absolute;
+    margin: 100px auto auto;
     right: 0;
     top: 50%;
 }
@@ -349,6 +369,12 @@ p {
     padding-left: 82px;
     padding-top: 40px;
     width: 37%;
+}
+.main-home .portfolio-slider .col-md-push-5 {
+    left: 37%;
+}
+.main-home .portfolio-slider .col-md-pull-7 {
+    right: 63%;
 }
 .main-home .group-slider .slide img {
     display: table;
@@ -450,18 +476,6 @@ p {
     height: 150px;
     margin: 0 0 25px;
 }
-::-webkit-input-placeholder {
-   opacity: 1;
-}
-:-moz-placeholder {
-   opacity: 1;
-}
-::-moz-placeholder {
-   opacity: 1;
-}
-:-ms-input-placeholder {  
-   opacity: 1;
-}
 .main-home .cont-6_contact_left {
     padding-right: 65px;
 }
@@ -546,6 +560,9 @@ p {
     min-width: 120px;
     padding: 16px 4px;
 }
+.footer .cont-8_quick-links li:last-child {
+    padding-bottom: 0;
+}
 .footer .cont-8_quick-links {
     padding-left: 60px;
 }
@@ -564,12 +581,11 @@ p {
     padding-top: 0;
 }
 .footer .cont-8_quick-links .ul-left {
-    display: inline-block;
-    float: left;
+    display: inline-table;
     margin-right: 40px;
 }
 .footer .cont-8_quick-links .ul-right {
-    display: inline-block;
+    display: inline-table;
 }
 .footer .cont-8_quick-links ul li:last-child {
     border-bottom: none;
@@ -636,19 +652,298 @@ p {
 .footer .cont-8_footer-social .li-top i {
     transform: rotate(90deg);
 }
+.main-portfolio .cont-2 {
+    padding: 75px 0;
+}
+.main-portfolio .projects-slider .slide img {
+    width: 100%;
+}
+.main-portfolio .cont-1 {
+    height: 290px;
+    background: url(http://localhost/dev6/wp-content/uploads/2015/09/21bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.main-portfolio .h1-title {
+    color: #fff;
+    font-family: playfair display,serif;
+    font-size: 70px;
+    font-weight: normal;
+    margin: 130px 0 0;
+    text-align: center;
+}
+.main-portfolio .projects-slider .date {
+    font-family: playfair display,serif;
+    font-size: 17px;
+}
+.main-portfolio .projects-thumbnails img {
+    padding: 15px 15px 0 15px;
+    width: 100%;
+}
+.main-portfolio .row-3 > .col-md-12 {
+    padding: 0;
+}
+.main-portfolio .projects-thumbnails h3.title {
+    font-size: 21px;
+    margin: 0;
+    text-align: center;
+}
+.main-portfolio .projects-slider {
+    margin: 0 0;
+}
+.main-portfolio .projects-slider .col-md-4 {
+    padding-left: 25px;
+}
+.main-portfolio .projects-slider .title {
+    margin: 0 0 30px;
+}
+.main-portfolio .projects-slider .desc {
+    margin: 0 0 30px;
+}
+.main-portfolio .projects-slider .tags {
+    margin: 0 0 35px;
+}
+.main-portfolio .projects-thumbnails {
+    margin: 60px 0 0;
+}
+.main-portfolio .projects-thumbnails img {
+    margin: 0 0 30px;
+}
+.main-portfolio .slick-arrow {
+    border-color: #021422;
+    margin-top: -35px;
+}
+.main-portfolio .slick-arrow i {
+    color: #021422;
+}
+.main-portfolio .slick-prev {
+    left: -50px;
+}
+.main-portfolio .slick-next {
+    right: -50px;
+}
+
+@media (min-width: 0px) and (max-width: 1199px) {
+
+#menu-menu li {
+    padding: 25px 6px;
+}
+.main-home .cont-4_desc {
+    padding-top: 0;
+}
+
+}
+
+@media (min-width: 0px) and (max-width: 991px) {
+
+#menu-menu li {
+    padding: 25px 6px;
+}
+.navbar-header {
+    display: block;
+    float: none;
+    margin: auto;
+}
+.banner-header .logo {
+    display: table;
+    margin: auto;
+    padding: 30px 0 0;
+}
+.float-right {
+    display: table;
+    float: none;
+    margin: auto;
+}
+#menu-menu li {
+    padding: 25px 5px;
+}
+.banner-header .fb-btn {
+    display: inline-block;
+    float: none;
+    margin-left: 10px;
+}
+.main-slider h1 {
+    font-size: 70px;
+}
+.main-slider .col-md-12 {
+    margin-top: -166px;
+}
+.main-home .cont-2_we-do {
+    margin: 0 0 60px;
+}
+.main-home .cont-2_we-do:last-child {
+    margin: 0;
+}
+.col-2.cont-3_person, .col-4.cont-3_person, .col-6.cont-3_person, .col-8.cont-3_person {
+    margin-top: 0;
+}
+.main-home .cont-3_person {
+    float: left;
+    width: 50%;
+}
+.main-home .cont-4_desc {
+    margin: 40px 0 0;
+    padding: 0 82px;
+    width: 100%;
+}
+.main-home .portfolio-slider .col-md-push-5 {
+    left: 0px;
+    text-align: center;
+}
+.main-home .portfolio-slider .col-md-pull-7 {
+    right: 0px;
+}
+.main-home .cont-4_img {
+    padding: 0 82px;
+    width: 100%;
+}
+.main-home .cont-6_contact_left {
+    float: left;
+    padding: 0 15px;
+    width: 50%;
+}
+.main-home .cont-6_contact_right {
+    float: left;
+    max-width: none;
+    padding: 0 15px 0 35px;
+    width: 50%;
+}
+.main-home .group-slider .slick-arrow, .main-home .group-slider .slick-arrow i {
+    border-color: #021422;
+    color: #021422;
+}
+.main-home .group-slider {
+    padding: 0 90px;
+}
+.footer .cont-8_why-us {
+    margin: 0 0 40px;
+}
+.footer .cont-8_quick-links {
+    margin: 0 0 40px;
+    padding: 0 15px;
+}
+.footer .cont-8_contact-us {
+    padding: 0 15px;
+}
+ul {
+    margin: 0;
+}
+.footer .cont-8_quick-links li:last-child {
+    padding-bottom: 0;
+}
+.footer .cont-8_footer-copy {
+    float: left;
+    width: 60%;
+}
+.footer .cont-8_footer-social {
+    float: right;
+    width: 40%;
+}
+
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+
+.navbar-collapse {
+    display: none;
+}
+.navbar-toggle {
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    display: table;
+    margin: 20px auto 0;
+    padding: 10px;
+}
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.nav-main {
+    background-color: #0d0d19;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+    margin: 20px 0 0;
+    border-radius: 10px;
+    width: 0px;
+}
+.nav-main.display-on {
+    height: auto;
+    width: auto;
+    padding: 20px;
+}
+#menu-menu li {
+    display: block;
+    float: none;
+    padding: 0 0 8px;
+    text-align: center;
+    width: 100%;
+}
+.banner-header .fb-btn {
+    display: block;
+    margin: 0;
+}
+#menu-menu {
+    float: none;
+    margin: auto;
+}
+#menu-menu li a {
+    padding: 0 0 15px;
+}
+.banner-header .fb-btn a {
+    border-color: #1791F4;
+    color: #fff;
+}
+#menu-menu li a:hover {
+    border: none;
+    color: #1791F4;
+}
+
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+
+
+.main-slider h1 {
+    font-size: 50px;
+}
+.main-home .cont-3_person {
+    float: none;
+    width: 100%;
+}
+.main-home .cont-6_contact_left {
+    float: none;
+    margin: 0 0 40px;
+    width: 100%;
+}
+.main-home .cont-6_contact_right {
+    float: none;
+    padding: 0 15px;
+    width: 100%;
+}
+.footer .cont-8_quick-links .ul-left {
+    margin-right: 10px;
+}
+.footer .cont-8_footer-copy {
+    float: none;
+    text-align: center;
+    width: 100%;
+}
+.footer .cont-8_footer-social {
+    display: table;
+    float: none;
+    margin: 20px 0 0;
+    width: 100%;
+}
+.footer .cont-8_footer-social > ul {
+    float: none;
+    margin: auto;
+}
+.main-slider .slick-dots {
+    bottom: 20px;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+}

@@ -68,7 +68,7 @@ Template Name: Home
 							</div>
 						</a>
 					</div>
-					<?php if($i == 4) echo '</div><div class="row row-3">'; ?>
+					<?php if($i % 4 == 0) echo '</div><div class="row row-custom">'; ?>
 					<?php $i++; ?>
 					<?php endwhile; ?>
 				</div>
@@ -93,13 +93,13 @@ Template Name: Home
 					<div class="portfolio-slider">
 						<?php while (has_sub_field('1d.projects')): ?>
 						<div class="slide">
-							<div class="col-md-5 cont-4_desc">
+							<div class="col-md-7 col-md-pull-7 cont-4_img">
+								<img src="<?php the_sub_field('1d.image'); ?>" alt="">
+							</div>
+							<div class="col-md-5 col-md-push-5 cont-4_desc">
 								<h3><?php the_sub_field('1d.name'); ?></h3>
 								<p><?php the_sub_field('1d.description'); ?></p>
 								<a href="<?php the_sub_field('1d.link_to'); ?>" class="btn btn-2">Go to portfolio</a>
-							</div>
-							<div class="col-md-7 cont-4_img">
-								<img src="<?php the_sub_field('1d.image'); ?>" alt="">
 							</div>
 						</div>
 						<?php endwhile; ?>

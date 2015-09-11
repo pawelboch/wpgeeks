@@ -58,6 +58,7 @@
       <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/javascripts/pixelperfect/src/pixel-perfect.js"></script>
       <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/javascripts/vendor/prefixfree/prefixfree.min.js"></script>
       <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/javascripts/bootstrap.min.js"></script>
+      <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/javascripts/isotope/isotope.min.js"></script>
       <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script> 
       <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/javascripts/script.js"></script>
   	</footer>

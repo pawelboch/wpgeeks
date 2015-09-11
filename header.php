@@ -36,7 +36,7 @@
 		<header class="banner-header" role="banner">
 			<div class="container">
 				<div class="navbar-header float-left">
-					<button data-target=".nav-main, .nav-extras" data-toggle="collapse" class="navbar-toggle" type="button">
+					<button data-target=".nav-main, .nav-extras" class="navbar-toggle" type="button">
 						<span class="sr-only"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -47,7 +47,7 @@
 					</div>
 				</div>
 				<div class="float-right">
-					<nav role="navigation" class="nav-main navbar-collapse collapse">
+					<nav role="navigation" class="nav-main navbar-collapse">
 						<?php
 							wp_nav_menu( array(
 								'theme_location' => 'primary',
@@ -59,10 +59,10 @@
 							  'walker' => new wp_bootstrap_navwalker())
 							);
 						?>
-					</nav>
 					<div class="fb-btn">
 					  <a href="" class="btn btn-fb"><i class="fa fa-facebook"></i>Visit our fanpage</a>
 					</div>
+					</nav>
 				</div>
 			</div>
 		</header>

@@ -1,6 +1,8 @@
 $('.main-slider').slick({
   arrows: false,
   dots: true,
+  fade: true,
+  cssEase: 'linear',
   slidesToShow: 1
 });
 
@@ -19,13 +21,68 @@ $('.testimonial-slider').slick({
 $('.group-slider').slick({
   arrows: false,
   dots: false,
-  slidesToShow: 4
+  slidesToShow: 4,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        infinite: true,
+        arrows: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        infinite: true,
+        arrows: true,
+        dots: false
+      }
+    }
+  ]
 });
 
-pixelperfect.init( { 
-    image: "http://localhost/dev6/wp-content/uploads/2015/09/screenb.jpg",
-    opacity: .5
-} );
+$('.projects-slider').slick({
+ slidesToShow: 1,
+ slidesToScroll: 1,
+ arrows: false,
+ fade: false,
+ asNavFor: '.projects-thumbnails',
+});
+
+$('.projects-thumbnails').slick({
+ slidesToShow: 4,
+ slidesToScroll: 1,
+ asNavFor: '.projects-slider',
+ dots: false,
+ arrows: true,
+ focusOnSelect: true
+});
+
+$('.projects-thumbnails .slide').removeClass('slick-active');
+
+$('.projects-thumbnails .slide').eq(0).addClass('slick-active');
+
+$(function() {
+  $('#menu-menu li a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+$( ".navbar-toggle" ).click(function() {
+  $( ".nav-main" ).toggleClass( "display-on" );
+});
 
     google.maps.event.addDomListener(window, 'load', init);
     var map;
