@@ -56,6 +56,7 @@ Template Name: Home
 			<div class="col-md-12 custom-col">
 				<div class="row row-2">
 					<?php $i = 1 ;?>
+					<?php $k = 2 ;?>
 					<?php while (has_sub_field('1c.persons')): ?>
 					<div class="col-md-3 col-<?php echo $i; ?> cont-3_person">
 						<a href="<?php the_sub_field('1c.link_to'); ?>" style="background: url(<?php the_sub_field('1c.foto'); ?>);">	
@@ -68,8 +69,9 @@ Template Name: Home
 							</div>
 						</a>
 					</div>
-					<?php if($i % 4 == 0) echo '</div><div class="row row-custom">'; ?>
+					<?php if($i % 4 == 0 && $i < $k) echo '</div><div class="row row-custom">'; ?>
 					<?php $i++; ?>
+					<?php $k++; ?>
 					<?php endwhile; ?>
 				</div>
 			</div>

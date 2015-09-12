@@ -9,13 +9,31 @@ $('.main-slider').slick({
 $('.portfolio-slider').slick({
   arrows: true,
   dots: false,
-  slidesToShow: 1
+  slidesToShow: 1,
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        arrows: false,
+        dots: true
+      }
+    }
+  ]
 });
 
 $('.testimonial-slider').slick({
   arrows: true,
   dots: false,
-  slidesToShow: 1
+  slidesToShow: 1,
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        arrows: false,
+        dots: true
+      }
+    }
+  ]
 });
 
 $('.group-slider').slick({
@@ -33,12 +51,21 @@ $('.group-slider').slick({
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 767,
       settings: {
         slidesToShow: 1,
         infinite: true,
         arrows: true,
         dots: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        infinite: true,
+        arrows: false,
+        dots: true
       }
     }
   ]
@@ -58,7 +85,27 @@ $('.projects-thumbnails').slick({
  asNavFor: '.projects-slider',
  dots: false,
  arrows: true,
- focusOnSelect: true
+ focusOnSelect: true,
+ responsive: [
+   {
+     breakpoint: 992,
+     settings: {
+       slidesToShow: 3,
+       infinite: true,
+       arrows: false,
+       dots: true
+     }
+   },
+   {
+     breakpoint: 600,
+     settings: {
+       slidesToShow: 1,
+       infinite: true,
+       arrows: false,
+       dots: true
+     }
+   }
+ ]
 });
 
 $('.projects-thumbnails .slide').removeClass('slick-active');
